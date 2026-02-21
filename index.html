@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alejandro — Diseñador</title>
+  <meta name="description" content="Portafolio de diseño de Alejandro. Proyectos de UI/UX, branding e identidad visual." />
+  <meta property="og:title" content="Alejandro — Diseñador" />
+  <meta property="og:description" content="Portafolio de diseño de Alejandro." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">A.</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__glow"></div>
+    <div class="hero__content reveal">
+      <p class="hero__greeting">Hola, soy</p>
+      <h1 class="hero__name">Alejandro<span class="hero__dot">.</span></h1>
+      <p class="hero__role">Diseñador UI/UX &amp; Visual</p>
+      <p class="hero__desc">Creo experiencias digitales memorables que conectan marcas con personas.</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn--outline">Hablemos</a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section__title reveal">Sobre mí</h2>
+      <div class="about__grid">
+        <div class="about__image reveal">
+          <div class="about__image-frame">
+            <div class="about__image-placeholder">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="45" r="22" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 105c0-22 18-40 40-40s40 18 40 40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="about__text reveal">
+          <p>Soy un diseñador apasionado por crear experiencias digitales que no solo se ven increíbles, sino que resuelven problemas reales. Mi enfoque combina <strong>estética visual</strong> con <strong>pensamiento estratégico</strong>.</p>
+          <p>Con experiencia en UI/UX, branding e identidad visual, transformo ideas en productos digitales que generan impacto. Cada proyecto es una oportunidad para empujar los límites del diseño.</p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-number">3+</span>
+              <span class="about__stat-label">Años de experiencia</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">20+</span>
+              <span class="about__stat-label">Proyectos completados</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">15+</span>
+              <span class="about__stat-label">Clientes satisfechos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section__title reveal">Proyectos</h2>
+      <p class="section__subtitle reveal">Una selección de mis trabajos más recientes</p>
+      <div class="projects__grid">
+
+        <article class="project-card reveal" id="project-1">
+          <div class="project-card__image">
+            <div class="project-card__overlay">
+              <span class="project-card__view">Ver proyecto →</span>
+            </div>
+            <div class="project-card__placeholder" style="--hue: 260;">
+              <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="40" y="30" width="320" height="200" rx="12" stroke="currentColor" stroke-width="2"/>
+                <rect x="60" y="60" width="140" height="20" rx="4" fill="currentColor" opacity="0.3"/>
+                <rect x="60" y="90" width="200" height="10" rx="2" fill="currentColor" opacity="0.15"/>
+                <rect x="60" y="110" width="180" height="10" rx="2" fill="currentColor" opacity="0.15"/>
+                <rect x="60" y="140" width="100" height="36" rx="8" fill="currentColor" opacity="0.25"/>
+                <circle cx="300" cy="100" r="40" fill="currentColor" opacity="0.1"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">App de Finanzas</h3>
+            <p class="project-card__desc">Diseño de interfaz para una aplicación de gestión financiera personal con enfoque en simplicidad.</p>
+            <div class="project-card__tags">
+              <span class="tag">UI Design</span>
+              <span class="tag">Mobile</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" id="project-2">
+          <div class="project-card__image">
+            <div class="project-card__overlay">
+              <span class="project-card__view">Ver proyecto →</span>
+            </div>
+            <div class="project-card__placeholder" style="--hue: 180;">
+              <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="40" y="40" width="150" height="220" rx="20" stroke="currentColor" stroke-width="2"/>
+                <rect x="60" y="70" width="110" height="60" rx="8" fill="currentColor" opacity="0.15"/>
+                <rect x="60" y="140" width="80" height="12" rx="3" fill="currentColor" opacity="0.25"/>
+                <rect x="60" y="160" width="110" height="8" rx="2" fill="currentColor" opacity="0.1"/>
+                <rect x="60" y="175" width="90" height="8" rx="2" fill="currentColor" opacity="0.1"/>
+                <circle cx="300" cy="150" r="60" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                <circle cx="300" cy="150" r="30" fill="currentColor" opacity="0.1"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">E-commerce Redesign</h3>
+            <p class="project-card__desc">Rediseño completo de la experiencia de compra para una tienda de moda online.</p>
+            <div class="project-card__tags">
+              <span class="tag">UX Design</span>
+              <span class="tag">E-commerce</span>
+              <span class="tag">Web</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" id="project-3">
+          <div class="project-card__image">
+            <div class="project-card__overlay">
+              <span class="project-card__view">Ver proyecto →</span>
+            </div>
+            <div class="project-card__placeholder" style="--hue: 320;">
+              <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="200" cy="130" r="70" stroke="currentColor" stroke-width="2"/>
+                <path d="M170 110 L200 80 L230 110" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M200 80 L200 160" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <rect x="120" y="220" width="160" height="16" rx="4" fill="currentColor" opacity="0.2"/>
+                <rect x="150" y="245" width="100" height="10" rx="3" fill="currentColor" opacity="0.1"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Branding Studio</h3>
+            <p class="project-card__desc">Identidad visual completa para un estudio creativo, incluyendo logo, paleta y tipografía.</p>
+            <div class="project-card__tags">
+              <span class="tag">Branding</span>
+              <span class="tag">Identity</span>
+              <span class="tag">Print</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" id="project-4">
+          <div class="project-card__image">
+            <div class="project-card__overlay">
+              <span class="project-card__view">Ver proyecto →</span>
+            </div>
+            <div class="project-card__placeholder" style="--hue: 40;">
+              <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="30" y="30" width="340" height="240" rx="8" stroke="currentColor" stroke-width="2"/>
+                <rect x="30" y="30" width="340" height="50" rx="8" fill="currentColor" opacity="0.08"/>
+                <rect x="50" y="50" width="60" height="12" rx="3" fill="currentColor" opacity="0.25"/>
+                <rect x="260" y="47" width="40" height="18" rx="9" fill="currentColor" opacity="0.2"/>
+                <rect x="310" y="47" width="40" height="18" rx="9" fill="currentColor" opacity="0.2"/>
+                <rect x="50" y="100" width="140" height="80" rx="6" fill="currentColor" opacity="0.1"/>
+                <rect x="210" y="100" width="140" height="80" rx="6" fill="currentColor" opacity="0.1"/>
+                <rect x="50" y="200" width="300" height="12" rx="3" fill="currentColor" opacity="0.12"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Dashboard SaaS</h3>
+            <p class="project-card__desc">Panel de control para plataforma SaaS con visualización de datos y reportes en tiempo real.</p>
+            <div class="project-card__tags">
+              <span class="tag">Dashboard</span>
+              <span class="tag">SaaS</span>
+              <span class="tag">Data Viz</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section__title reveal">Skills</h2>
+      <div class="skills__grid">
+        <div class="skill-card reveal" id="skill-design">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="36" height="36" rx="8" stroke="currentColor" stroke-width="2"/>
+              <circle cx="18" cy="18" r="5" stroke="currentColor" stroke-width="2"/>
+              <path d="M30 30L24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <rect x="14" y="28" width="20" height="2" rx="1" fill="currentColor" opacity="0.5"/>
+              <rect x="14" y="34" width="14" height="2" rx="1" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">UI Design</h3>
+          <p class="skill-card__desc">Interfaces visuales atractivas, coherentes y orientadas a la conversión.</p>
+        </div>
+        <div class="skill-card reveal" id="skill-ux">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 24C16 20 20 16 24 16S32 20 32 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">UX Research</h3>
+          <p class="skill-card__desc">Investigación centrada en el usuario para tomar decisiones de diseño informadas.</p>
+        </div>
+        <div class="skill-card reveal" id="skill-brand">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6L42 18V30L24 42L6 30V18L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M24 6V42" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+              <path d="M6 18L42 18" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Branding</h3>
+          <p class="skill-card__desc">Identidades visuales que comunican la esencia de tu marca.</p>
+        </div>
+        <div class="skill-card reveal" id="skill-proto">
+          <div class="skill-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
+              <rect x="26" y="8" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
+              <rect x="8" y="26" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
+              <rect x="26" y="26" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M22 15H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15 22V26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Prototyping</h3>
+          <p class="skill-card__desc">Prototipos interactivos de alta fidelidad en Figma y Framer.</p>
+        </div>
+      </div>
+
+      <div class="skills__tools reveal">
+        <h3 class="skills__tools-title">Herramientas</h3>
+        <div class="skills__tools-list">
+          <span class="tool-badge">Figma</span>
+          <span class="tool-badge">Photoshop</span>
+          <span class="tool-badge">Illustrator</span>
+          <span class="tool-badge">After Effects</span>
+          <span class="tool-badge">Framer</span>
+          <span class="tool-badge">Webflow</span>
+          <span class="tool-badge">Notion</span>
+          <span class="tool-badge">Miro</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section__title reveal">¿Trabajamos juntos?</h2>
+      <p class="section__subtitle reveal">Estoy disponible para proyectos freelance y colaboraciones</p>
+      <div class="contact__content reveal">
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">Enviar mensaje</button>
+        </form>
+        <div class="contact__info">
+          <div class="contact__info-item">
+            <span class="contact__info-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p>hola@alejandro.design</p>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-icon">📍</span>
+            <div>
+              <strong>Ubicación</strong>
+              <p>Ciudad de México, MX</p>
+            </div>
+          </div>
+          <div class="contact__socials">
+            <a href="#" class="contact__social" aria-label="Behance" id="social-behance">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
+            </a>
+            <a href="#" class="contact__social" aria-label="Dribbble" id="social-dribbble">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.628 0-12 5.373-12 12s5.372 12 12 12 12-5.373 12-12-5.372-12-12-12zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073-.244-.563-.497-1.125-.767-1.68 2.31-1 4.165-2.358 5.548-4.082 1.35 1.594 2.197 3.619 2.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68-1.016-1.861-2.178-3.676-3.488-5.438.779-.197 1.591-.314 2.431-.314 2.275 0 4.368.779 6.043 2.072zm-10.516-.993c1.331 1.742 2.511 3.538 3.537 5.381-2.43.715-5.331 1.082-8.684 1.105.692-2.835 2.601-5.193 5.147-6.486zm-5.44 8.834l.013-.256c3.849-.005 7.169-.448 9.95-1.322.233.475.456.952.67 1.432-3.38 1.057-6.165 3.222-8.337 6.48-1.432-1.719-2.296-3.927-2.296-6.334zm3.829 7.81c1.969-3.088 4.482-5.098 7.598-6.027.928 2.42 1.609 4.91 2.043 7.46-3.349 1.291-7.178.708-9.641-1.433zm11.586.43c-.438-2.353-1.08-4.653-1.92-6.897 1.876-.265 3.94-.196 6.199.196-.437 2.786-2.028 5.192-4.279 6.701z"/></svg>
+            </a>
+            <a href="#" class="contact__social" aria-label="LinkedIn" id="social-linkedin">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="#" class="contact__social" aria-label="Instagram" id="social-instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Alejandro. Hecho con 💜</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
