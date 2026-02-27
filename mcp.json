@@ -1,0 +1,13 @@
+{
+  "name": "Portfolio MCP",
+  "id": "portfolio-mcp",
+  "version": "0.1.0",
+  "protocolVersion": 1,
+  "host": { "type": "http", "url": "http://localhost:3000" },
+  "hosts": [
+    { "type": "http", "url": "http://localhost:3000" },
+    { "type": "http", "url": "https://mcp.unframer.co/mcp?id=f0653ba1fd877cb0a5f34f8718451a18faf37762ce504cd737512d9cfc1acf03&secret=PUs3Y72QfHRmWrw3aTSms1iOrWjLMJ83" }
+  ],
+  "capabilities": ["fileBrowser", "fileRead", "fileWrite", "openUrl"],
+  "description": "MCP local para ver y editar el portafolio en Framer Desktop"
+}
