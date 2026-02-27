@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!--
+    Archivo: index.html
+    Propósito: entrada principal del portafolio. Define la estructura HTML de la página,
+    incluye `style.css` y `script.js` y contiene las secciones editables desde Framer
+    (hero, about, projects, skills, contact). Para cambios desde MCP: leer/editar los
+    archivos listados (index.html, style.css, script.js).
+  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alejandro — Diseñador</title>
@@ -14,8 +21,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <!-- ========== NAV ========== -->
+  <!-- Barra de navegación fija. Modifica enlaces y logo aquí. -->
   <nav class="nav" id="nav">
     <a href="#hero" class="nav__logo">A.</a>
     <button class="nav__toggle" id="navToggle" aria-label="Menú">
@@ -30,6 +37,8 @@
   </nav>
 
   <!-- ========== HERO ========== -->
+  <!-- Sección principal de entrada: título, rol, descripción y CTA. Ideal para pruebas A/B
+       o cambios visuales rápidos desde Framer (texto, tipografías, botones). -->
   <section class="hero" id="hero">
     <div class="hero__glow"></div>
     <div class="hero__content reveal">
@@ -48,6 +57,8 @@
   </section>
 
   <!-- ========== ABOUT ========== -->
+  <!-- Sección 'Sobre mí' con imagen y estadísticas. La imagen es un placeholder SVG;
+       puedes sustituir por un asset real. -->
   <section class="about section" id="about">
     <div class="container">
       <h2 class="section__title reveal">Sobre mí</h2>
@@ -85,6 +96,8 @@
   </section>
 
   <!-- ========== PROJECTS ========== -->
+  <!-- Grid de tarjetas de proyectos. Cada `article.project-card` puede enlazar a
+       una página interna o abrir modal. Modifica títulos, descripciones y tags. -->
   <section class="projects section" id="projects">
     <div class="container">
       <h2 class="section__title reveal">Proyectos</h2>
@@ -206,6 +219,8 @@
   </section>
 
   <!-- ========== SKILLS ========== -->
+  <!-- Rejilla de habilidades y herramientas. Ideal para actualizar iconos o textos
+       desde Framer o mediante edición directa. -->
   <section class="skills section" id="skills">
     <div class="container">
       <h2 class="section__title reveal">Skills</h2>
@@ -264,20 +279,26 @@
       <div class="skills__tools reveal">
         <h3 class="skills__tools-title">Herramientas</h3>
         <div class="skills__tools-list">
-          <span class="tool-badge">Figma</span>
-          <span class="tool-badge">Photoshop</span>
-          <span class="tool-badge">Illustrator</span>
-          <span class="tool-badge">After Effects</span>
-          <span class="tool-badge">Framer</span>
-          <span class="tool-badge">Webflow</span>
-          <span class="tool-badge">Notion</span>
-          <span class="tool-badge">Miro</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/figma.svg" alt="Figma">Figma</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/photoshop.svg" alt="Photoshop">Photoshop</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/illustrator.svg" alt="Illustrator">Illustrator</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/after-effects.svg" alt="After Effects">After Effects</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/framer.svg" alt="Framer">Framer</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/webflow.svg" alt="Webflow">Webflow</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/slack.svg" alt="Slack">Slack</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/devops.svg" alt="DevOps">DevOps</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/wordpress.svg" alt="Wordpress">Wordpress</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/affinity.svg" alt="Affinity">Affinity</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/notion.svg" alt="Notion">Notion</span>
+          <span class="tool-badge"><img class="tool-badge__icon" src="assets/tools/miro.svg" alt="Miro">Miro</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========== CONTACT ========== -->
+  <!-- Formulario de contacto (cliente). `script.js` gestiona el envío; si quieres que
+       guarde mensajes localmente, puedo añadir un endpoint en el MCP para recibirlos. -->
   <section class="contact section" id="contact">
     <div class="container">
       <h2 class="section__title reveal">¿Trabajamos juntos?</h2>
@@ -333,12 +354,16 @@
   </section>
 
   <!-- ========== FOOTER ========== -->
+  <!-- Pie de página simple. Actualiza el año o el texto aquí según necesites. -->
   <footer class="footer">
     <div class="container">
       <p>© 2026 Alejandro. Hecho con 💜</p>
     </div>
   </footer>
 
+  <!-- Script principal: interacciones (toggle nav, formulario, reveal effects). Para
+       desarrollo con Framer, puedes inyectar cambios en `script.js` o usar el MCP
+       para reemplazar fragmentos. -->
   <script src="script.js"></script>
 </body>
 </html>

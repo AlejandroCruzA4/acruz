@@ -2,6 +2,16 @@
    DESIGN SYSTEM — Custom Properties
    ============================================ */
 :root {
+  /*
+    Archivo: style.css
+    Propósito: sistema de estilos principal del portafolio. Contiene variables CSS (colores,
+    tipografía, espaciados), reglas base, utilidades y estilos por secciones (nav, hero,
+    projects, contact, etc.).
+
+    Nota: mantener las variables en `:root` facilita personalizar temas desde Framer o desde
+    ediciones rápidas vía MCP. Las secciones están separadas y etiquetadas para localizar
+    fácilmente dónde aplicar cambios.
+  */
   /* Colors */
   --bg-primary: #0a0a0f;
   --bg-secondary: #12121a;
@@ -664,6 +674,22 @@ strong {
   color: var(--text-secondary);
   font-weight: 500;
   transition: all var(--transition-fast);
+}
+
+/* Icon inside tool badge */
+.tool-badge__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+  object-fit: contain;
+  filter: none; /* keep original icon colors */
+}
+
+.tool-badge {
+  display: inline-flex;
+  align-items: center;
 }
 
 .tool-badge:hover {
